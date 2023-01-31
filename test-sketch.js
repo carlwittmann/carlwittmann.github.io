@@ -22,7 +22,7 @@ function branch(len, angle, gen) {
 	line(0, 0, 0, -len);
 	translate(0, -len);
 	len *= 0.7;
-	angle = random(angle-30, angle+20);
+	angle = random(angle-35, angle+25);
 
 	if (len > 2) {
 		push();
