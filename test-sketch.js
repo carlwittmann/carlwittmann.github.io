@@ -15,13 +15,13 @@ function setup() {
 function draw() {
 	translate(width/2, height/2);
 	rotate(45/2);
-	branchComponent(100, 8, 60);
+	branchComponent(100, 8, 80);
 }
 
 function branch(len, angle, gen) {
 	line(0, 0, 0, -len);
 	translate(0, -len);
-	len *= 0.7;
+	len *= 0.9;
 	angle = random(angle-35, angle+25);
 
 	if (len > 2) {
