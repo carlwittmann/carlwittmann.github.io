@@ -1,3 +1,5 @@
+// Code by Engin Arslan, from https://codepen.io/enginarslan/pen/XMMjjP
+
 var COLOR_01 = [178, 30, 93]; // pink
 var COLOR_02 = [42, 178, 48]; // green
 var COLOR_03 = [110, 255, 116]; // light green
