@@ -21,10 +21,10 @@ function draw() {
 function branch(len, angle, gen) {
 	line(0, 0, 0, -len);
 	translate(0, -len);
-	len *= 0.9;
+	len *= 0.6;
 	angle = random(angle-35, angle+25);
 
-	if (len > 1) {
+	if (len > 10) {
 		push();
 		rotate(angle);
 		branch(len, angle, gen);
