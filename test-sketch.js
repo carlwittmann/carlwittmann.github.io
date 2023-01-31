@@ -50,3 +50,8 @@ function branchComponent(len, amount, angle) {
 		pop();
 	}
 }
+
+function mousePressed() {
+  l += 1;
+  redraw();
+}
