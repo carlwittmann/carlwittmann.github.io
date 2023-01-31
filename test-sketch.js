@@ -15,7 +15,7 @@ function setup() {
 function draw() {
 	translate(width/2, height/2);
 	rotate(45/2);
-	branchComponent(100, 8, 80);
+	branchComponent(50, 10, 50);
 }
 
 function branch(len, angle, gen) {
