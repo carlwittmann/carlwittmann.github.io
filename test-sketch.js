@@ -24,7 +24,7 @@ function branch(len, angle, gen) {
 	len *= 0.9;
 	angle = random(angle-35, angle+25);
 
-	if (len > 2) {
+	if (len > 3) {
 		push();
 		rotate(angle);
 		branch(len, angle, gen);
