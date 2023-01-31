@@ -46,7 +46,7 @@ function branchComponent(len, amount, angle) {
 		push();
 		rotAmount = -180 + increment * i
 		rotate(random(rotAmount - 60, rotAmount));
-		branch(len + 1, angle, 1);
+		branch(len + 10, angle, 1);
 		pop();
 	}
 }
