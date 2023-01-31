@@ -7,7 +7,7 @@ function setup() {
 	var size = 800;
 	createCanvas(size, size);
 	background.apply(null, COLOR_04);
-	noLoop();
+	Loop();
 	stroke(255);
 	angleMode(DEGREES);
 }
@@ -49,9 +49,4 @@ function branchComponent(len, amount, angle) {
 		branch(len + 10, angle, 1);
 		pop();
 	}
-}
-
-function mousePressed() {
-  l += 1;
-  redraw();
 }
