@@ -21,7 +21,7 @@ function draw() {
 function branch(len, angle, gen) {
 	line(0, 0, 0, -len);
 	translate(0, -len);
-	len *= 0.6;
+	len *= 0.95;
 	angle = random(angle-35, angle+25);
 
 	if (len > 10) {
