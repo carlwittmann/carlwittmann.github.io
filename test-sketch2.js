@@ -1,0 +1,59 @@
+// Code by Engin Arslan, from https://codepen.io/enginarslan/pen/XMMjjP
+
+var COLOR_01 = [50, 80, 2]; // pink
+var COLOR_02 = [200, 200, 140]; // green
+var COLOR_03 = [200, 0, 116]; // light green
+var COLOR_04 = [0, 0, 80]; // gray
+
+function setup() {
+	var size = 800;
+	createCanvas(size, size);
+	background.apply(null, COLOR_04);
+	framerate(30);
+	Loop();
+	stroke(255);
+	angleMode(DEGREES);
+}
+
+function draw() {
+	translate(width/2, height/2);
+	rotate(45/2);
+	branchComponent(50, 10, 50);
+}
+
+function branch(len, angle, gen) {
+	line(0, 0, 0, -len);
+	translate(0, -len);
+	len *= 0.95;
+	angle = random(angle-35, angle+25);
+
+	if (len > 10) {
+		push();
+		rotate(angle);
+		branch(len, angle, gen);
+		pop();
+
+		push();
+		rotate(-angle);
+		branch(len, angle, gen);
+		pop();
+	}
+}
+
+function branchComponent(len, amount, angle) {
+	stroke.apply(null, COLOR_01);
+	var increment = 360/amount;
+	var rotAmount;
+
+	for (var i = 0; i < amount; i++) {
+		push();
+		rotAmount = -180 + increment * i
+		rotate(random(rotAmount - 60, rotAmount));
+		branch(len + 10, angle, 1);
+		pop();
+	}
+}
+
+function mousePressed(){
+  loop();
+}
