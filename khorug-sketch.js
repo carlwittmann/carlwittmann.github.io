@@ -1,7 +1,7 @@
 let boundary;
 
 function preload(){
-    boundary = loadJSON("khorug_residential.geojson");
+    boundary = loadJSON("khorug_residential_export.geojson");
 }
 
 let padding = 20;
