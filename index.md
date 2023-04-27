@@ -4,9 +4,9 @@ layout: hello-default
 # using Markdown language, you can customize the following variables!
 
 # these variables are required -------------------------------
-banner_title: index
-banner_subtitle: index
-background_image: /images/madre_de_dios/art/MdDBackground7.png
+banner_title: Carl Wittmann
+banner_subtitle: Geospatialist
+background_image: /images/madre_de_dios/art/MdDBackground13.png
 
 # all of the following variables are optional -----------------
 #page_url: /hello # only include this variable if you aren't building the page to your primary domain 
