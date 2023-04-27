@@ -10,15 +10,12 @@ work:
         image: /images/thumbnails/watersheds_thumb.png # Mapbox Watersheds
       - item: rpgis.html
         image: /images/thumbnails/rpgis_thumb.png #RPGIS
-      - item: darkmode.html
+      - item: _includes\darkmode.html
         image: /images/thumbnails/darkmode_thumb.png #Dark Mode
-  - category: Los Angeles
+
+  - category: Analysis
     items:
-      - item: example.html
-        image: /images/LA1.jpg
-      - item: example.html
-        image: /images/LA2.jpg
-      - item: example2.html
-        image: /images/LA3.jpg
-      - item: example3.html
-        image: /images/LA4.jpg
+      - item: mdd.html
+        image: /images/thumbnails/mdd_thumb.png
+      - item: habitat.html
+        image: /images/thumbnails/habitat_thumb.png
