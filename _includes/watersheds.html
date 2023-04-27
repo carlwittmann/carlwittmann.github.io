@@ -1,3 +1,3 @@
-<h1><a href="https://carlwittmann.github.io/StreamAnimation/">Animating Vancouver's Watersheds</a></h1>
-<h2>Stream Networks of the Capilano, Seymour, and Coquitlam Reservoirs<h2>
-<p>This animation was inspired by a 2021 blog post by Stamen Design. I hit a surprising number of dead ends - it turns out that live-rendering 17,000 line segments is a bit more memory-intensive than I anticipated. To remedy this, I reclassified the local DEM to 25-meter increments and performed a spatial join with the stream polylines in order to assign each line segment an elevation class. The stream network was then exported as a GeoJSON and drawn over a Leaflet map using P5.JS.</p>
+<h1><a href="https://carlwittmann.github.io/vancouverdiorama/">3D Model of Vancouver's Watersheds</a></h1>
+<h2>An interactive diorama<h2>
+<p>I originally created this Sentinel-2 mosaic to use as a plane in Blender, which would then be displaced by a resampled DEM mosaic. I ditched this plan when I realized that embedding the final rendered object online would be a headache, and instead opted for a much more lightweight solution: simply draping the Sentinel-2 mosaic over Mapbox 3D terrain.</p>
