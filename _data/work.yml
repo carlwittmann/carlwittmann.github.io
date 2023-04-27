@@ -5,7 +5,7 @@ work:
   - category: New York City
     items:
       - item: example.html
-        image: /images/NYC1.jpg # optionally, include the file path for an image for each item
+        image: /images/thumbnails/streamnetwork_thumb.png # optionally, include the file path for an image for each item
       - item: example.html
         image: /images/NYC2.jpg
       - item: example2.html
