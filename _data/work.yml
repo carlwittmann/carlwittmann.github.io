@@ -4,10 +4,10 @@
 work:
   - category: New York City
     items:
-      - item: example.html
-        image: /images/thumbnails/streamnetwork_thumb.png # optionally, include the file path for an image for each item
-      - item: example.html
-        image: /images/NYC2.jpg
+      - item: streamnetwork.html
+        image: /images/thumbnails/streamnetwork_thumb.png # Stream Network
+      - item: watersheds.html
+        image: /images/thumbnails/watersheds_thumb.png
       - item: example2.html
         image: /images/NYC3.jpg
       - item: example3.html
