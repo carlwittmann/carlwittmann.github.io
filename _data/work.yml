@@ -10,7 +10,7 @@ work:
         image: /images/thumbnails/watersheds_thumb.png # Mapbox Watersheds
       - item: rpgis.html
         image: /images/thumbnails/rpgis_thumb.png #RPGIS
-      - item: _includes\darkmode.html
+      - item: _includes/darkmode.html
         image: /images/thumbnails/darkmode_thumb.png #Dark Mode
 
   - category: Analysis
