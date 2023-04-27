@@ -7,11 +7,11 @@ work:
       - item: streamnetwork.html
         image: /images/thumbnails/streamnetwork_thumb.png # Stream Network
       - item: watersheds.html
-        image: /images/thumbnails/watersheds_thumb.png
+        image: /images/thumbnails/watersheds_thumb.png # Mapbox Watersheds
       - item: rpgis.html
-        image: /images/thumbnails/rpgis_thumb.png
-      - item: example3.html
-        image: /images/NYC4.jpg
+        image: /images/thumbnails/rpgis_thumb.png #RPGIS
+      - item: darkmode.html
+        image: /images/thumbnails/darkmode_thumb.png #Dark Mode
   - category: Los Angeles
     items:
       - item: example.html
