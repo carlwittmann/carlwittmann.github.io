@@ -2,7 +2,7 @@
 # in the root directory
 
 work:
-  - category: New York City
+  - category: Webmaps
     items:
       - item: streamnetwork.html
         image: /images/thumbnails/streamnetwork_thumb.png # Stream Network
