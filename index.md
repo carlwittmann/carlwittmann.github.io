@@ -6,7 +6,7 @@ layout: hello-default
 # these variables are required -------------------------------
 banner_title: Carl Wittmann
 banner_subtitle: Geospatialist
-background_image: /images/madre_de_dios/art/MdDBackground13.png
+background_image: /images/madre_de_dios/art/MdDBackground18.png
 
 # all of the following variables are optional -----------------
 #page_url: /hello # only include this variable if you aren't building the page to your primary domain 
@@ -23,7 +23,7 @@ github_username:  carlwittmann # your github username
 
 # By declaring these variables, you can include a button that links to an external website or to media.
 about_button: https://github.com/saragong/hello # the link
-about_button_label: get hello # the label on the button
+about_button_label: github # the label on the button
 
 # optional portfolio section ------------------------------------------
 
