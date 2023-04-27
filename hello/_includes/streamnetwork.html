@@ -1,0 +1,3 @@
+<h1><a href="https://carlwittmann.github.io/StreamAnimation/">Animating Vancouver's Watersheds</a></h1>
+<h2>Stream Networks of the Capilano, Seymour, and Coquitlam Reservoirs<h2>
+<p>Give it a second to load! This animation was inspired by a 2021 blog post by Stamen Design. I hit a surprising number of dead ends - it turns out that live-rendering 17,000 line segments is a bit more memory-intensive than I anticipated. To remedy this, I reclassified the local DEM to 25-meter increments and performed a spatial join with the stream polylines in order to assign each line segment an elevation class. The stream network was then exported as a GeoJSON and drawn over a Leaflet map using P5.JS.</p>

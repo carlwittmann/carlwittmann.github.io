@@ -1,0 +1,23 @@
+# _config.yml
+
+# required, replace with your own information -----
+title: Carl Wittmann
+author: Vancouver, BC
+description: > 
+  Remote Sensing & GIS
+baseurl: "https://carlwittmann.github.io/"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  
+#---------------------------------------------------
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+
