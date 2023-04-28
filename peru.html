@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Your Title Here</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
+	<link rel="stylesheet" href="before-after.css" />
+	<script src="https://cdn.jsdelivr.net/npm/before-after@1.0.5/dist/before-after.min.js"></script>
+	
+    <style>
+        		.banner {
+			width: 100%;
+			height: 400px;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+        
+		#mapid {
+			height: 500px;
+            width: 650px
+		}
+
+		.img-resize {
+			max-width:650px;
+  			height: auto;
+		}
+
+		main{margin:40px auto;
+			max-width:650px;
+			line-height:1.6;
+			font-size:18px;
+			color:#444;
+			padding:0
+					10px}
+					h1,h2,h3{line-height:1.2}
+
+	</style>
+</head>
+
+<body>
+    <div class="banner" style="background-image: url('/images/madre_de_dios/tambopata.jpg');"></div>
+
+	<main>
+
+		<header>
+			<h1>Illegal Gold Mines in Madre de Dios, Peru</h1>
+			<p>Exploring the intersection between remote sensing and illegal resource extraction</p>
+		</header>
+
+		<section>
+			<!-- <h2>Madre de Dios, Peru</h2> -->
+			<div id="mapid"></div>
+			<p>ROI</p>
+            <script>
+                var mymap = L.map('mapid').setView([-12.91021, -69.97064], 6);
+                L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                    attribution: 'Map data &copy; <a href="https://www.esri.com/">ESRI</a>',
+                    maxZoom: 18
+                }).addTo(mymap);
+
+        function preload() {
+        roi = loadJSON('/images/madre_de_dios/roi.geojson');
+      }
+      
+      // Draw the ROI geojson on the map
+      function draw() {
+        L.geoJSON(roi).addTo(mymap);
+        noLoop(); // only draw once
+      }
+            </script>
+		</section>
+
+		<script>
+			beforeAfter(".before-after");
+		</script>
+
+		<section>
+			<h2>Landsat 7 (May 2000)</h2>
+			<img src="/images/madre_de_dios/aoi/L7_RGB.png" class="img-resize" alt="Description of your image">
+			<p>Twenty years ago, Madre de Dios was a relatively isolated region, accessible only by dirt roads or river.</p>
+		</section>
+
+		
+		<section>
+			<h2>Interoceanic Highway</h2>
+			<img src="/images/madre_de_dios/highway/HIGHWAY.png" class="img-resize" alt="Description of your image">
+			<p>In 2011, construction of the Interoceanic Highway was completed, introducing a high-traffic corridor through the region.</p>
+		</section>
+
+		<section>
+			<h2>20 Years of Deforestation in Madre de Dios</h2>
+			<div class="before-after">
+				<img src="/images/madre_de_dios/aoi/L7_RGB.png" class="img-resize" alt="Before image">
+				<img src="/images/madre_de_dios/aoi/L8_RGB.png" class="img-resize" alt="After image">
+			</div>
+			<p>Caption for your before/after image pair goes here.</p>
+		</section>
+
+		<section>
+			<h2>Animated GIF</h2>
+			<img src="/images/madre_de_dios/SAR_GIF.gif" class="img-resize" alt="Description of your GIF">
+			<p>Caption for your animated GIF goes here.</p>
+		</section>
+
+		<section>
+			<h2>NDVI > 0.20</h2>
+			<div class="before-after">
+				<img src="/images/madre_de_dios/aoi_ndvi_reclass_2/L7_2000_NDVIRECLASS_020.png" class="img-resize" alt="Before image">
+				<img src="/images/madre_de_dios/aoi_ndvi_reclass_2/L8_2020_NDVIRECLASS_020.png" class="img-resize" alt="After image">
+			</div>
+			<p>Caption for your before/after image pair goes here.</p>
+		</section>
+
+	
+		<section>
+			<h2>Before/After Image Pair #2</h2>
+			<div class="before-after">
+				<img src="/images/madre_de_dios/aoi_ndvi_reclass_3/L7_2000_NDVIRECLASS_030.png" class="img-resize" alt="Before image">
+				<img src="/images/madre_de_dios/aoi_ndvi_reclass_3/L8_2020_NDVIRECLASS_030.png" class="img-resize" alt="After image">
+			</div>
+			<p>Caption for your before/after image pair goes here.</p>
+		</section>
+
+	</main>
+
+	<footer>
+		<p>Your footer content here.</p>
+	</footer>
+
+</body>
+
+</html>

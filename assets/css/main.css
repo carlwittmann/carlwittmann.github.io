@@ -3415,7 +3415,7 @@ input, select, textarea {
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.85;
+			opacity: 0.05;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3487,7 +3487,7 @@ input, select, textarea {
 		}
 
 			#banner.major.alt {
-				opacity: 0.75;
+				opacity: 0.5;
 			}
 
 		#banner.style1:after {
