@@ -3380,7 +3380,7 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("/images/madre_de_dios/art/MdDBackgroundPampasMinesBefore.png");
+		background-image: url("/portfolio/images/madre_de_dios/art/MdDBackgroundPampasMinesBefore.png");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3499,7 +3499,7 @@ input, select, textarea {
 		}
 
 		#banner.style3:after {
-			background-image: url("/images/madre_de_dios/art/MdDBackgroundPampasMinesBefore_flipped.png");
+			background-image: url("/portfolio/images/madre_de_dios/art/MdDBackgroundPampasMinesBefore_flipped.png");
 			background-size: cover;
 		}
 

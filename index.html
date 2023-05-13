@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>Carl Wittmann - Geospatial Sciences</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -34,7 +34,7 @@
 								<li><a href="#work">Portfolio</a></li>
 								<li><a href="#about">Education</a></li>
 								<li><a href="#contact">Contact</a></li>
-								<li><a href="#elements">Elements</a></li>
+								<!-- <li><a href="#elements">Elements</a></li> -->
 							</ul>
 						</nav>
 					</header>
@@ -48,72 +48,104 @@
 								<p>I'm a fledgling geospatial professional looking for opportunities to apply my skills and continue building knowledge.</p>
 								<p>I strive to stay software-agnostic: I'm comfortable applying a wide variety of software and command-line tools to different data formats and problems.</p>
 								<p>Most importantly, I'm confident in my ability to learn and adapt. </p>
-								<span class="image main"><img src="/portfolio/images/thumbnails/LIDAR_STACK.png" alt="" /></span>
-								<h6 style="color: darkgrey;"><i>LiDAR point cloud processing (ArcGIS Pro)</i></h6>
+								<span class="image main" style="margin-bottom: 0px;"><img src="/portfolio/images/thumbnails/LIDAR_STACK.png" alt="" /></span>
+								<h6 style="color: darkgrey; margin-top: 0px;"><i>LiDAR point cloud processing (ArcGIS Pro)</i></h6>
 							</article>
 
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">My Portfolio</h2>
-								<span class="image main"><img src="/portfolio/images/thumbnails/sar_dem_stack.png" alt=""/></span>
-								<h6 style="color: darkgrey;"><i>Interferometric DEM workflow (SNAP & SnapHU)</i></h6>
-								<p>You can view a portfolio of my work <a href="/portfolio/index.html">here.</a></p>
-								<p>I'm particularly interested in deriving meaning and knowledge from diverse sources of data, and vizuali.</p>
-								<span class="image main"><img src="/portfolio/images/madre_de_dios/SAR_GIF.gif" alt="Sentinel-1 Time Series" /></span>
-								<p>Some more stuff about me. </p>
+								<p>You can view a portfolio of my past work, ongoing projects, and favourite resources <a href="/portfolio/index.html">here.</a></p>
+								<p><i>(Be warned - it's a work in progress!)</i></p>
+								<span class="image main" style="margin-bottom: 0px; margin-top: 0px"><img src="/portfolio/images/thumbnails/sar_dem_stack.png" alt=""/></span>
+								<h6 style="color: darkgrey; margin-top: 0px;"><i>Interferometric DEM workflow (SNAP & SnapHU)</i></h6>
+								<p>I'm particularly interested in collecting, analyzing, and visualizing diverse sources of data in order to derive meaning and solve real-world problems.</p>
+								<p>My personal projects and research often explores the intersection between remote sensing, illegal resource extraction, conflict, and organized crime. This has, in turn, spurred an interest in building functional knowledge of synthetic aperture radar imagery as well as handling large datasets. The animation below, for example, was created using a series of nearly 300 Sentinel-1 images spanning 2016-2020; it shows the expansion of illegal gold mines in Madre de Dios, Peru.</p>
+								<span class="image main" style="margin-bottom: 0px; margin-top: 0px"><img src="/portfolio/images/madre_de_dios/SAR_GIF.gif" alt="Sentinel-1 Time Series" /></span>
+								<h6 style="color: darkgrey; margin-top: 0px;"><i>Sentinel-1 Time Series of Illegal Gold Mines in Peru (2016-2020)</i></h6>
+								<p>At this point, I consider myself a "confident beginner" when it comes to working in Python or R - I am familiar with many of the relevant libraries and can comfortably adapt notebooks or code to suit my purposes, but I'm not writing custom scripts (yet!). This is one of the topics I'm most excited to cover at BCIT.</p>
+								<p>I'm more confident when it comes to web cartography. Javascript was my first language; it gave me the tools to share my work with a broader audience and add interactive elements.</p>
+						
+								<p>Some of my proficiencies and areas of knowledge:</p>
+								<div class="table-wrapper">
+									<table class="alt">
+										<tbody>
+											<tr>
+												<td style="vertical-align: middle;"><b>Software</b></td>
+												<td><i>ArcGIS Pro, QGIS, SNAP, ENVI, GRASS, ArcMap, Excel, Adobe Photoshop & Illustrator, GIMP, Inkscape, Blender</i></td>
+											</tr>
+											<tr>
+												<td style="vertical-align: middle;"><b>Javascript</b></td>
+												<td><i>Leaflet, Mappa, Turf, Cesium, Mapbox GL JS, D3</i></td>
+											</tr>
+											<tr>
+												<td style="vertical-align: middle;"><b>R</b></td>
+												<td><i>sf, sp, raster, rgdal, lidR, maptools, rastervis</i></td>
+											</tr>
+											<tr>
+												<td style="vertical-align: middle;"><b>Python</b></td>
+												<td><i>ArcPy, GDAL/OGR/Fiona, Pandas/GeoPandas, RSGISLib, Rasterio, LasPy, NumPy, Matplotlib, SciKit</i></td>
+											</tr>
+											<tr>
+												<td style="vertical-align: middle;"><b>Data</b></td>
+												<td><i>LiDAR, Orthophotography, Multispectral Imagery, Synthetic Aperture Radar, In Situ Measurements</i></td>
+											</tr>
+											<tr>
+												<td style="vertical-align: middle;"><b>Processes</b></td>
+												<td><i>Imagery Processing & Correction, Segmentation & Classification, DEM/DTM Generation, Spectral & Terrain Analysis, TIme Series & Change Detection, Land Cover Mapping, Stream Network Modelling, Slope & Flood Hazard Analysis, Accuracy Assessment, Automated Processes, 2D/3D/Web Cartography</i></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
 							</article>
 
 						<!-- About -->
-							<article id="about">
-								<h2 class="major">Education</h2>
-								<span class="image main"><img src="/portfolio/images/thumbnails/van_diorama_iso.png" alt="" /></span>
-								<h6 style="color: darkgrey;"><i>Interactive 3D watershed model (Google Earth Engine, QGIS, Mapbox)</i></h6>
-								<section>
-									<div class="table-wrapper">
-										<table>
+						<article id="about">
+							<h2 class="major">Education</h2>
+							<span class="image main" style="margin-bottom: 0px;"><img src="/portfolio/images/thumbnails/van_diorama_iso.png" alt="" /></span>
+							<h6 style="color: darkgrey; margin-top: 0px;"><i>Interactive 3D watershed model (Google Earth Engine, QGIS, Mapbox)</i></h6>
+							
+							<p style="margin: 0;"><b>British Columbia Institute of Technology</b></p>
+							<div style="display: flex; justify-content: space-between;">
+								<p style="text-align: left; margin: 0;"><i>Advanced Diploma in Geographic Information Systems</i></p>
+								<p style="text-align: right; margin: 0;"><i>Currently Enrolled</i></p>
+							</div>
 
-											<tbody>
-												<tr>
-													<td>UBC</td>
-													<td>2023</td></br>
-													<td>BA Geography (Environment & Sustainability)</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								
-							</article>
+							<hr style="margin-top: 5px; margin-bottom: 5px;">
+
+							<p style="margin: 0;"><b>University of British Columbia</b></p>
+							<div style="display: flex; justify-content: space-between;">
+								<p style="text-align: left; margin: 0;"><i>BA Geography (Environment & Sustainability)</i></p>
+								<p style="text-align: right; margin: 0;"><i>2023</i></p>
+							</div>
+
+							<hr style="margin-top: 5px; margin-bottom: 5px;">
+							
+							<p style="margin: 0;"><b>Langara College</b></p>
+							<div style="display: flex; justify-content: space-between;">
+								<p style="text-align: left; margin: 0;"><i>AA Geography + Certificate in Latin American Studies</i></p>
+								<p style="text-align: right; margin: 0;"><i>2018</i></p>
+							</div>
+
+							<hr style="margin-top: 5px; margin-bottom: 5px;">
+							
+							<p style="margin: 0;"><b>GEOS Languages Victoria</b></p>
+							<div style="display: flex; justify-content: space-between;">
+								<p style="text-align: left; margin: 0;"><i>Teaching English as a Second Language Certificate</i></p>
+								<p style="text-align: right; margin: 0;"><i>2010</i></p>
+							</div>
+							
+						</article>
+						
 
 						<!-- Contact -->
 							<article id="contact"> 
 								<h2 class="major">Contact</h2>
-								<form method="post" action="cwittmann2.0@gmail.com">
+								<span class="image main" style="margin-bottom: 0px;"><img src="/portfolio/images/thumbnails/rpgis_banner.png" alt="" /></span>
+							<h6 style="color: darkgrey; margin-top: 0px;"><i>Fantasy Cartography (Inkscape, ArcGIS Pro, Mapbox GL JS)</i></h6>
+							<p>Feel free to contact me via the form below, or directly at cw.geospatial@gmail.com</p>
+								<form method="post" action="cw.geospatial@gmail.com">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name / Company</label>
@@ -133,16 +165,16 @@
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
-								<ul class="icons">
+								<!-- <ul class="icons">
 									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
+								</ul> -->
 							</article>
 
 						<!-- Elements -->
-							<article id="elements">
+							<!-- <article id="elements">
 								<h2 class="major">Elements</h2>
 
 								<section>
@@ -381,7 +413,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 									</form>
 								</section>
 
-							</article>
+							</article> -->
 
 					</div>
 
