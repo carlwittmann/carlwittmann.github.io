@@ -685,9 +685,11 @@ input, select, textarea {
 		}
 
 		.image.fit {
-			display: block;
-			margin: 0 0 2rem 0;
-			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 2rem;
+			width: 50%;
 		}
 
 			.image.fit img {
